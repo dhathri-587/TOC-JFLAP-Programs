@@ -1,0 +1,34 @@
+# Theory of Computation - JFLAP Programs
+
+## Problem 1
+
+### Aim
+To construct a Finite Automaton using JFLAP.
+
+### Tool Used
+JFLAP
+
+### Alphabet
+{a}
+
+### States
+- q0 – Initial state
+- q1 – Final state
+- q2 – Reject state
+
+### Transitions
+- q0 --a--> q1
+- q1 --a--> q2
+- q2 --a--> q2
+
+### Sample Inputs
+
+| Input | Result |
+|---|---|
+| a | Accept |
+| aa | Reject |
+| aaa | Reject |
+| aaaa | Reject |
+
+### Output
+The automaton accepts `a` and rejects strings containing two or more `a` symbols.
